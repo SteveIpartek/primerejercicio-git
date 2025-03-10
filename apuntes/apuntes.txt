@@ -1,50 +1,34 @@
-//Modo de añadir contenido nuevo a git:
-
-
-admin@vbox:~/Documentos/TheBridge/Ejercicios-S3/Terminal-Y-GIT$ code
-admin@vbox:~/Documentos/TheBridge/Ejercicios-S3/Terminal-Y-GIT$ code
-admin@vbox:~/Documentos/TheBridge/Ejercicios-S3/Terminal-Y-GIT$ git status
+admin@vbox:~/Documentos/TheBridge/Ejercicios-S3/Terminal-Y-GIT$ mkdir apuntes 
+admin@vbox:~/Documentos/TheBridge/Ejercicios-S3/Terminal-Y-GIT$ ls
+apuntes  index.html  prueba.html  README.md
+admin@vbox:~/Documentos/TheBridge/Ejercicios-S3/Terminal-Y-GIT$ cd apuntes/
+admin@vbox:~/Documentos/TheBridge/Ejercicios-S3/Terminal-Y-GIT/apuntes$ code
+admin@vbox:~/Documentos/TheBridge/Ejercicios-S3/Terminal-Y-GIT/apuntes$ git s
+scalar            shortlog          show-branch       stage             status            switch            
+send-email        show              sparse-checkout   stash             submodule         
+admin@vbox:~/Documentos/TheBridge/Ejercicios-S3/Terminal-Y-GIT/apuntes$ git status 
 En la rama main
 Tu rama está actualizada con 'origin/main'.
 
 Archivos sin seguimiento:
   (usa "git add <archivo>..." para incluirlo a lo que será confirmado)
-	prueba.html
+	./
 
 no hay nada agregado al commit pero hay archivos sin seguimiento presentes (usa "git add" para hacerles seguimiento)
-admin@vbox:~/Documentos/TheBridge/Ejercicios-S3/Terminal-Y-GIT$ git add prueba.html 
-admin@vbox:~/Documentos/TheBridge/Ejercicios-S3/Terminal-Y-GIT$ git commit -m "Añadido nuevo doc"
-[main 6d2e56e] Añadido nuevo doc
- 1 file changed, 11 insertions(+)
- create mode 100644 prueba.html
-admin@vbox:~/Documentos/TheBridge/Ejercicios-S3/Terminal-Y-GIT$ git push -u origin main
-To https://github.com/SteveIpartek/primerejercicio-git.git
- ! [rejected]        main -> main (fetch first)
-error: falló el empuje de algunas referencias a 'https://github.com/SteveIpartek/primerejercicio-git.git'
-hint: Updates were rejected because the remote contains work that you do not
-hint: have locally. This is usually caused by another repository pushing to
-hint: the same ref. If you want to integrate the remote changes, use
-hint: 'git pull' before pushing again.
-hint: See the 'Note about fast-forwards' in 'git push --help' for details.
-admin@vbox:~/Documentos/TheBridge/Ejercicios-S3/Terminal-Y-GIT$ git pull origin main --rebase
-remote: Enumerating objects: 5, done.
-remote: Counting objects: 100% (5/5), done.
-remote: Compressing objects: 100% (2/2), done.
-remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
-Desempaquetando objetos: 100% (3/3), 948 bytes | 948.00 KiB/s, listo.
-Desde https://github.com/SteveIpartek/primerejercicio-git
- * branch            main       -> FETCH_HEAD
-   46867ed..06c0631  main       -> origin/main
-Rebase aplicado satisfactoriamente y actualizado refs/heads/main.
-admin@vbox:~/Documentos/TheBridge/Ejercicios-S3/Terminal-Y-GIT$ git push -u origin main
-Enumerando objetos: 4, listo.
-Contando objetos: 100% (4/4), listo.
+admin@vbox:~/Documentos/TheBridge/Ejercicios-S3/Terminal-Y-GIT/apuntes$ git add .
+admin@vbox:~/Documentos/TheBridge/Ejercicios-S3/Terminal-Y-GIT/apuntes$ git commit -m "Apuntes de como actualizar el repo"
+[main fafe9ef] Apuntes de como actualizar el repo
+ 1 file changed, 50 insertions(+)
+ create mode 100644 apuntes/apuntes.txt
+admin@vbox:~/Documentos/TheBridge/Ejercicios-S3/Terminal-Y-GIT/apuntes$ git push -u origin main
+Enumerando objetos: 5, listo.
+Contando objetos: 100% (5/5), listo.
 Compresión delta usando hasta 4 hilos
 Comprimiendo objetos: 100% (3/3), listo.
-Escribiendo objetos: 100% (3/3), 482 bytes | 482.00 KiB/s, listo.
-Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Escribiendo objetos: 100% (4/4), 1.39 KiB | 1.39 MiB/s, listo.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
 To https://github.com/SteveIpartek/primerejercicio-git.git
-   06c0631..95e54c0  main -> main
+   95e54c0..fafe9ef  main -> main
 rama 'main' configurada para rastrear 'origin/main'.
-admin@vbox:~/Documentos/TheBridge/Ejercicios-S3/Terminal-Y-GIT$ 
+admin@vbox:~/Documentos/TheBridge/Ejercicios-S3/Terminal-Y-GIT/apuntes$ clear
 
